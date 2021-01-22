@@ -1,9 +1,14 @@
+[v-cloak]{
+  display: none;
+}
 h1{
   color: #17B9E8;
+  cursor: pointer;
 }
 h1, h2{
   text-align: center;
 }
 h2{
   text-decoration: underline;
+  color: brown;
 }

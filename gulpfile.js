@@ -99,9 +99,14 @@ gulp.task('sass', function() {
 		.pipe(gulp.dest(config.scss.dest))
 })
 
+gulp.task('watch-sass',function(){
+	gulp.watch('./src/scss/*.scss', gulp.series(['sass']));
+})
+
 gulp.task('help', function() {
-	console.log('------------------------------------------------------------')
-	console.log('   gulp sass                     编译sass文件')
-	console.log('   gulp sass --file              编译指定file文件')
-	console.log('------------------------------------------------------------')
+	console.log('************************************************************')
+	console.log('*   gulp sass                     编译sass文件             *')
+	console.log('*   gulp sass --file              编译指定file文件         *')
+	console.log('*   gulp watch-sass               监视sass文件并编译       *')
+	console.log('************************************************************')
 })

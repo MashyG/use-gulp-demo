@@ -11,8 +11,10 @@
 
 <body>
   <div id="app" v-cloak>
-    <h1>Hello World!!!!!!</h1>
+    <h1 @click="start">Hello World!!!!!!</h1>
+    <h1 v-show="isShowStart">{{startText}}</h1>
     <h2>You can see control window！（F12）</h2>
+    
   </div>
 </body>
 <script src="../js/vue.min.js"></script>
@@ -20,13 +22,21 @@
 <script>
 var app = new Vue({
   el: '#app',
-  data: {},
+  data: function () {
+    return {
+      startText: 'Click out me',
+      isShowStart: false
+    }
+  },
   mounted: function() {
     this.init()
   },
   methods: {
     init: function() {
       console.log('main-index-anthor')
+    },
+    start: function () { 
+      this.isShowStart = !this.isShowStart
     }
   }
 });
