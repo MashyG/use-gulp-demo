@@ -3,4 +3,4 @@
 
 ### 运行需要 Node 环境
 #### 首先下载： ` npm install `
-#### 其次使用 gulp 命令：编译 sass 等操作
+#### 其次使用 gulp 命令：编译 sass 等操作 ` gulp sass `
