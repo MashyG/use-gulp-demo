@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>main-index</title>
+  <meta name="keywords" content="keywords">
+  <meta name="description" content="description">
+  <link rel="stylesheet" href="../css/index.min.css">
+</head>
+
+<body>
+  <div id="app" v-cloak>
+    <h1>Hello World!!!!!!</h1>
+    <h2>You can see control window！（F12）</h2>
+  </div>
+</body>
+<script src="../js/vue.min.js"></script>
+<script src="../js/config/index.js"></script>
+<script>
+var app = new Vue({
+  el: '#app',
+  data: {},
+  mounted: function() {
+    this.init()
+  },
+  methods: {
+    init: function() {
+      console.log('main-index-anthor')
+    }
+  }
+});
+</script>
+
+</html>
